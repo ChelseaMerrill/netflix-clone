@@ -1,0 +1,13 @@
+.Block{
+border-style: solid;
+height: 150mm;
+width: 140mm;
+text-align: center;
+margin-top: 2mm;
+}
+
+.movies{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
