@@ -13,6 +13,7 @@ function App() {
         <div>
           <Navbar/>
         </div>
+        <hr />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/singleMovie/:id" component={SingleMovie} />

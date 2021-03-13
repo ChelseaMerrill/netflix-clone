@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import MovieCard from '../MovieCard/MovieCard.component.jsx';
 import './Homepage.styles.css'
 
 class Homepage extends Component {
@@ -25,39 +25,19 @@ class Homepage extends Component {
 
 
     render(){
-        console.log(this.state)
         return(
             <div>
                 <div>
                 <h1>Trending Movies</h1>
                 </div>
-
                 <div className='movies'>
-                    {this.state.movies.map(movie => {
-                    return ( 
-                        <div key={movie.id} className='Block'>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}></img>
-                        <h1>{movie.title}</h1>
-                        <p>{movie.overview}</p>
-                        <Link to={{pathname:`singleMovie/${movie.id}`, state: movie}}><button>View Movie</button></Link>
-                        </div>)})
-                }
+                    {this.state.movies.map(movie =>  <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
                     <div>
                     <h1>Another</h1>
                     </div>
-
-                    <div className='movies'>
-                    {this.state.another.map(movie => {
-                    return ( 
-                        <div key={movie.id} className='Block'>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}></img>
-                        <h1>{movie.title}</h1>
-                        <p>{movie.overview}</p>
-                        <Link to={{pathname:`singleMovie/${movie.id}`, state: movie}}><button>View Movie</button></Link>
-                        
-                        </div>)})
-                }
+                <div className='movies'>
+                    {this.state.another.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
 
             </div>

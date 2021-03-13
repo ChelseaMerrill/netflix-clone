@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Search from '../Search/Search.component.jsx';
 import './navbar.styles.css';
 
 class Navbar extends React.Component{
@@ -15,11 +16,10 @@ class Navbar extends React.Component{
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">TV Shows</a></li>
                 <li><a href="#">Documentaries</a></li>
-                <button>Search</button>
+                <Search/>
                 </ul>
                 </div>
             </div>
-            
         );
     }
   }
