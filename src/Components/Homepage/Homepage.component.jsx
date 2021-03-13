@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import './Homepage.styles.css'
 
 class Homepage extends Component {
@@ -38,6 +39,7 @@ class Homepage extends Component {
                         <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}></img>
                         <h1>{movie.title}</h1>
                         <p>{movie.overview}</p>
+                        <Link to={{pathname:`singleMovie/${movie.id}`, state: movie}}><button>View Movie</button></Link>
                         </div>)})
                 }
                 </div>
@@ -52,6 +54,8 @@ class Homepage extends Component {
                         <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}></img>
                         <h1>{movie.title}</h1>
                         <p>{movie.overview}</p>
+                        <Link to={{pathname:`singleMovie/${movie.id}`, state: movie}}><button>View Movie</button></Link>
+                        
                         </div>)})
                 }
                 </div>
