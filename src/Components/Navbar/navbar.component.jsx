@@ -12,12 +12,12 @@ class Navbar extends React.Component{
                 <div className='logo'>
                     <img src={Logo} width='300px' height='300px'/>
                 </div>
-                <div id="nav">
-                <Link to='/'><p>Home</p></Link>
-                <p>My List</p>
-                <p>Movies</p>
-                <p>TV Shows</p>
-                <p>Documentaries</p>
+                <div className="nav">
+                <Link to='/'><h4>Home</h4></Link>
+                <h4>My List</h4>
+                <h4>Movies</h4>
+                <h4>TV Shows</h4>
+                <h4>Documentaries</h4>
                 <Search/>
                 </div>
             </div>

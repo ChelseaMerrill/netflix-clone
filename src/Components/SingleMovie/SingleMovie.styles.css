@@ -1,0 +1,31 @@
+p{
+    color: rgb(65, 65, 199);
+    font-size: 16pt;
+}
+
+h1{
+    color: yellow;
+    font-size: 35pt;
+}
+
+h2{
+    color:rgb(65, 65, 199);
+    font-size: 30pt;
+}
+
+h3 {
+    color: rgb(65, 65, 199);
+    font-size: 20pt;
+
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.over{
+    padding-right: 50mm;
+    padding-left: 50mm;
+}
+

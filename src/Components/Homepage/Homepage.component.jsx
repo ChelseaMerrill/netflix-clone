@@ -22,7 +22,7 @@ class Homepage extends Component {
             .then(data => data.json())
             .then(response => response) 
             .then(data => this.setState({another: data.results}))    
-        fetch(`https://api.themoviedb.org/3/search/movie?query=comedy&api_key=7e21b72b8f689d3251fd5259f0c5b1b7`)
+        fetch(`https://api.themoviedb.org/3/search/movie?query=funny&api_key=7e21b72b8f689d3251fd5259f0c5b1b7`)
             .then(data => data.json())
             .then(response => response) 
             .then(data => this.setState({comedy: data.results}))

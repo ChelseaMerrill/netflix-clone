@@ -1,16 +1,17 @@
 .Block{
 border-style: solid;
-height: 110mm;
-width: 510mm;
+height: 100mm;
+width: 110mm;
 text-align: center;
 margin-top: 2mm;
 margin-left: 5mm;
-background-color: whitesmoke;
-color: rgb(65, 65, 199);
+background-color:yellow;
+color: yellow;
 }
 
-h1{
-    color: rgb(255, 255, 0);
+h5{
+    color: rgb(65, 65, 199);
+    font-size: 18pt;
 }
 
 .movies{
