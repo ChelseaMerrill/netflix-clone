@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import MovieCard from '../MovieCard/MovieCard.component.jsx';
+import Trending from './trending.jpg'
+import Romance from './romance.jpg'
+import Comedy from './comedy.jpg'
 import './Homepage.styles.css'
 
 class Homepage extends Component {
@@ -32,20 +35,20 @@ class Homepage extends Component {
     render(){
         return(
             <div className='background'>
-                <div>
-                <h1>Trending Movies</h1>
+                <div className='title'>
+                <img src={Trending} width='250px'/>
                 </div>
                 <div className='movies'>
                     {this.state.movies.map(movie =>  <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
-                    <div>
-                    <h1>Romance</h1>
+                    <div className='title'>
+                    <img src={Romance} width='250px'/>
                     </div>
                 <div className='movies'>
                     {this.state.another.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
-                <div>
-                    <h1>Comedy</h1>
+                <div className='title'>
+                <img src={Comedy} width='250px'/>
                 </div>
                 <div className='movies'>
                     {this.state.comedy.map(movie => <MovieCard key={movie.id} movie={movie}/>)}

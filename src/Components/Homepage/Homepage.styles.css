@@ -21,6 +21,10 @@ h5{
 }
 
 .background{
-    background-color:whitesmoke;
+    background-color:white;
     margin-top: 0%;
+}
+
+.title{
+    padding-top: 25mm;
 }
