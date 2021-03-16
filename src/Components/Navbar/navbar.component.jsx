@@ -1,23 +1,24 @@
 import React, {Component} from 'react';
 import Search from '../Search/Search.component.jsx';
+import {Link} from 'react-router-dom'
+import Logo from './final.png';
 import './navbar.styles.css';
+
 
 class Navbar extends React.Component{
     render() {
         return (
             <div>
-                <div>
-                    <h1>Movie Project</h1>
+                <div className='logo'>
+                    <img src={Logo} width='300px' height='300px'/>
                 </div>
-                <div>
-                <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My List</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV Shows</a></li>
-                <li><a href="#">Documentaries</a></li>
+                <div id="nav">
+                <Link to='/'><p>Home</p></Link>
+                <p>My List</p>
+                <p>Movies</p>
+                <p>TV Shows</p>
+                <p>Documentaries</p>
                 <Search/>
-                </ul>
                 </div>
             </div>
         );

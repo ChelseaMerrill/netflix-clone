@@ -1,13 +1,25 @@
 .Block{
 border-style: solid;
-height: 150mm;
-width: 140mm;
+height: 110mm;
+width: 510mm;
 text-align: center;
 margin-top: 2mm;
+margin-left: 5mm;
+background-color: whitesmoke;
+color: rgb(65, 65, 199);
+}
+
+h1{
+    color: rgb(255, 255, 0);
 }
 
 .movies{
     display: flex;
     flex-direction: row;
     overflow: scroll;
+}
+
+.background{
+    background-color:whitesmoke;
+    margin-top: 0%;
 }

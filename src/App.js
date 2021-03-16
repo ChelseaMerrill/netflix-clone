@@ -4,6 +4,8 @@ import Homepage from "./Components/Homepage/Homepage.component";
 import Navbar from "./Components/Navbar/navbar.component";
 import SingleMovie from './Components/SingleMovie/SingleMovie.component';
 import "./App.css";
+import SearchResults from "./Components/SearchResults/SearchResults.component";
+
 
 
 function App() {
@@ -13,9 +15,9 @@ function App() {
         <div>
           <Navbar/>
         </div>
-        <hr />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/search/:query" component={SearchResults}/>
           <Route exact path="/singleMovie/:id" component={SingleMovie} />
         </Switch>
       </div>
