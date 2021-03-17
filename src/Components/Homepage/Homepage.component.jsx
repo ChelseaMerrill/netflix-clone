@@ -3,6 +3,7 @@ import MovieCard from '../MovieCard/MovieCard.component.jsx';
 import Trending from './trending.jpg'
 import Romance from './romance.jpg'
 import Comedy from './comedy.jpg'
+import ReactPlayer from 'react-player'
 import './Homepage.styles.css'
 
 class Homepage extends Component {
@@ -35,6 +36,20 @@ class Homepage extends Component {
     render(){
         return(
             <div className='background'>
+                <div className='top'>
+                    <div className="App">
+                         <ReactPlayer
+                            url="https://www.youtube.com/watch?v=5UnjrG_N8hU"
+                            />
+                    </div>
+                    <div className='info'>
+                    <h3>Star Wars: Episode III - Revenge of the Sith</h3>
+                    <p>Science-Fiction, Adventure, Action | 2hr 20min</p>
+                    <p>Released: May 19th 2005 </p>
+                    <p>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
+                    </div>
+                </div>
+
                 <div className='title'>
                 <img src={Trending} width='250px'/>
                 </div>
