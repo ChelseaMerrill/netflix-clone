@@ -43,10 +43,11 @@ class Homepage extends Component {
                             />
                     </div>
                     <div className='info'>
-                    <h3>Star Wars: Episode III - Revenge of the Sith</h3>
-                    <p>Science-Fiction, Adventure, Action | 2hr 20min</p>
-                    <p>Released: May 19th 2005 </p>
-                    <p>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
+                    <h3 id='caption'>Star Wars: Episode III - Revenge of the Sith</h3>
+                    <p id='under'>Science-Fiction, Adventure, Action | 2hr 20min</p>
+                    <p id='under'>Released: May 19th 2005 </p>
+                    <p id='info'>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
+                    <p id='elm'>The #1 Movie of 2005!!!</p>
                     </div>
                 </div>
 

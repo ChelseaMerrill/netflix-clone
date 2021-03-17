@@ -20,6 +20,7 @@ h5{
     overflow: scroll;
 }
 
+
 .background{
     background-color:white;
     margin-top: 0%;
@@ -45,11 +46,21 @@ h3{
     margin-bottom: 0%;
 }
 
-p{
-    margin-top: 2mm;
+#under{
+    margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 15mm;
-    font-size: 6pt;
+    font-size: 12pt;
+}
+
+#info{
+    font-size: 18pt;
+}
+
+#elm{
+    font-size: 22pt;
+    color: yellow;
+    font-family: fantasy;
 }
