@@ -9,8 +9,8 @@ class Navbar extends React.Component{
     render() {
         return (
             <div>
-                <div className='logo'>
-                    <img src={Logo} width='300px' height='300px'/>
+                <div className='jumbotron'>
+                    <img src={Logo} width='350px' height='300px'/>
                 </div>
                 <div className="nav">
                 <Link to='/'><h4>Home</h4></Link>
