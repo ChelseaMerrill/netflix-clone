@@ -7,8 +7,7 @@
     margin-left: 5mm;
     background-color:rgb(65, 65, 199);
     color: yellow;
-    box-shadow: 5px -3px 20px 6px rgba(13, 13, 14, 0.685);
-    
+    box-shadow: 5px -3px 20px 6px rgba(13, 13, 14, 0.685); 
     }
     
     h5{
@@ -17,6 +16,9 @@
         text-shadow: 1px 1px 2px black;
     }
     
+    .info h3 p{
+        color:yellow;
+    }
     .movies{
         display: flex;
         flex-direction: row;
@@ -27,7 +29,7 @@
     
     
     .background{
-        background-color:white;
+        background-color:rgb(65, 65, 199);
         margin: auto;
         max-width: 1200px;
         box-shadow: 5px -3px 20px 6px rgba(52, 52, 59, 0.103);

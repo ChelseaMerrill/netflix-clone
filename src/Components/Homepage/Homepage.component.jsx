@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import MovieCard from '../MovieCard/MovieCard.component.jsx';
-import Trending from './trending.jpg'
-import Romance from './romance.jpg'
-import Comedy from './comedy.jpg'
 import ReactPlayer from 'react-player'
 import './Homepage.styles.css'
 
@@ -36,6 +33,7 @@ class Homepage extends Component {
     render(){
         return(
             <div className='background'>
+
                 <div className='top'>
                     <div className="App">
                          <ReactPlayer
@@ -43,28 +41,30 @@ class Homepage extends Component {
                             />
                     </div>
                     <div className='info'>
-                    <h3 id='caption'>Star Wars: Episode III - Revenge of the Sith</h3>
-                    <p id='under'>Science-Fiction, Adventure, Action | 2hr 20min</p>
-                    <p id='under'>Released: May 19th 2005 </p>
-                    <p id='info'>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
-                    <p id='elm'>The #1 Movie of 2005!!!</p>
+                        <h3>Star Wars: Episode III - Revenge of the Sith</h3>
+                        <p>Science-Fiction, Adventure, Action | 2hr 20min</p>
+                        <p>Released: May 19th 2005 </p>
+                        <p>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
+                        <p>The #1 Movie of 2005!!!</p>
                     </div>
                 </div>
 
                 <div className='title'>
-                <img src={Trending} width='250px'/>
+                    <h1>Trending</h1>
                 </div>
                 <div className='movies'>
                     {this.state.movies.map(movie =>  <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
-                    <div className='title'>
-                    <img src={Romance} width='250px'/>
-                    </div>
+                    
+                <div className='title'>
+                    <h1>Romance</h1>
+                </div>
                 <div className='movies'>
                     {this.state.another.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
                 </div>
+
                 <div className='title'>
-                <img src={Comedy} width='250px'/>
+                    <h1>Comedy</h1>
                 </div>
                 <div className='movies'>
                     {this.state.comedy.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
