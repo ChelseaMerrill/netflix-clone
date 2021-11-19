@@ -54,6 +54,7 @@ class Homepage extends Component {
                 </div>
 
                 <div className='title'>
+                    <img src="https://img.icons8.com/color/96/000000/documentary.png"/>
                     <h1>Trending</h1>
                 </div>
                 <div className='movies'>
@@ -61,6 +62,7 @@ class Homepage extends Component {
                 </div>
                     
                 <div className='title'>
+                    <img src="https://img.icons8.com/color/96/000000/novel--v1.png"/>
                     <h1>Romance</h1>
                 </div>
                 <div className='movies'>
@@ -68,6 +70,7 @@ class Homepage extends Component {
                 </div>
 
                 <div className='title'>
+                <img src="https://img.icons8.com/color/96/000000/comedy2.png"/>
                     <h1>Comedy</h1>
                 </div>
                 <div className='movies'>

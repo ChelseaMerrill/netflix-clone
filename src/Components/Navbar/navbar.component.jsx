@@ -14,7 +14,7 @@ class Navbar extends React.Component{
                 </div>
                 <div className="nav">
                 <Link to='/'><h4>Home</h4></Link>
-                <h4>My List</h4>
+                <Link to='/mylist'><h4>My List</h4></Link>
                 <h4>Movies</h4>
                 <h4>TV Shows</h4>
                 <h4>Documentaries</h4>

@@ -27,6 +27,10 @@
         margin-bottom: 40px;
     }
 
+    .title{
+        display: flex;
+    }
+
     .movies{
         display: flex;
         flex-direction: row;
