@@ -35,17 +35,21 @@ class Homepage extends Component {
             <div className='background'>
 
                 <div className='top'>
-                    <div className="App">
+                    <div>
                          <ReactPlayer
                             url="https://www.youtube.com/watch?v=5UnjrG_N8hU"
                             />
                     </div>
-                    <div className='info'>
-                        <h3 className='info'>Star Wars: Episode III - Revenge of the Sith</h3>
-                        <p className='info'>Science-Fiction, Adventure, Action | 2hr 20min</p>
-                        <p className='info'>Released: May 19th 2005 </p>
-                        <p className='info'>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
-                        <p className='info'>The #1 Movie of 2005!!!</p>
+                    <div className='infoSection'>
+                        <div className='blockOne'>
+                            <h3 className='info title'>Star Wars: Episode III - Revenge of the Sith</h3>
+                            <p className='info genre'>Science-Fiction, Adventure, Action | 2hr 20min</p>
+                            <p className='info genre'>Released: May 19th 2005 </p>
+                        </div>
+                        <div>
+                            <p className='info'>The evil Darth Sidious enacts his final plan for unlimited power -- and the heroic Jedi Anakin Skywalker must choose a side.</p>
+                        </div>
+                         <h1 className='info'>The #1 Movie of 2005!!!</h1>
                     </div>
                 </div>
 

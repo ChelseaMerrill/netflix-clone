@@ -15,16 +15,37 @@
         font-size: 18pt;
         text-shadow: 1px 1px 2px black;
     }
-    
+
+    .top{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .infoSection{
+        padding-left: 20px;
+    }
+
     .info{
         color:yellow;
     }
+
+    .genre{
+        font-style: italic;
+    }
+
+    .blockOne{
+        line-height: 5pt;
+        margin-bottom: 40px;
+    }
+
     .movies{
         display: flex;
         flex-direction: row;
         overflow: scroll;
-        height: 500px;
+        height: 430px;
         align-items: center;
+        margin-bottom: 80px;
     }
     
     
@@ -33,6 +54,6 @@
         margin: auto;
         max-width: 1200px;
         box-shadow: 5px -3px 20px 6px rgba(52, 52, 59, 0.103);
-    
+        padding: 40px;
     }
     

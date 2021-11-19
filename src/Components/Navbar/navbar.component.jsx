@@ -8,7 +8,7 @@ import './navbar.styles.css';
 class Navbar extends React.Component{
     render() {
         return (
-            <div>
+            <div className='jumboAndNav'>
                 <div className='jumbotron'>
                     <img src={Logo} width='350px' height='300px'/>
                 </div>
